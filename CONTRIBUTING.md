@@ -66,6 +66,13 @@ Before you can run and test the application locally, you'll need to install:
 - Run E2E tests before submitting: `npm run test:e2e`
    - All tests must pass
 
+### Comments and documentation
+
+- Explain intent, constraints, and non-obvious decisions; do not use comments to paraphrase code.
+- Add TSDoc/JSDoc to exported functions in `db/` and `src/lib/`, including their parameters and return values.
+- Add TSDoc to reusable Astro components' `Props` interfaces, and keep comments current when behavior changes.
+- Follow the TypeScript formatting rules enforced by ESLint.
+
 ## Submitting a Pull Request
 
 ### Issues
