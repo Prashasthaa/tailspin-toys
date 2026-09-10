@@ -39,5 +39,15 @@ export default [
     languageOptions: {
       parser: tseslint.parser,
     },
+    rules: {
+      "@typescript-eslint/consistent-type-imports": [
+        "error",
+        { prefer: "type-imports", fixStyle: "separate-type-imports" },
+      ],
+      "comma-dangle": ["error", "always-multiline"],
+      "object-curly-spacing": ["error", "always"],
+      "quotes": ["error", "single", { avoidEscape: true }],
+      "semi": ["error", "always"],
+    },
   },
 ];
